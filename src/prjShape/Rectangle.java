@@ -25,8 +25,8 @@ public class Rectangle extends Shape{
 		return width;
 	}
 	//method overriding
-	public double getArea() {
-		area=length*width;
-		return area;
-	}
+		public double getArea() {
+			area=length*width;
+			return area;
+		}
 }

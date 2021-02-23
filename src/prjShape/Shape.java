@@ -1,9 +1,10 @@
 package prjShape;
 
-public class Shape {
+public abstract class Shape {
 	protected String name;
 	protected double area;
 	
+	public abstract double getArea() ;
 	public Shape(String name) {
 		//System.out.println("Shape");
 		this.name=name;
@@ -19,8 +20,5 @@ public class Shape {
 	public String getName() {
 		return name;
 	}
-	public double getArea() {
-		System.out.println("undefined shape");
-		return area=0;
-	}
+	
 }
