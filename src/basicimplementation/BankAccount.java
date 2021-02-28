@@ -1,7 +1,7 @@
 package basicimplementation;
 
 
-public class BankAccount {
+public class BankAccount implements Comparable<BankAccount>{
 	private double balance;
 	private String name;
 	
@@ -34,5 +34,14 @@ public class BankAccount {
 	    }
 	    return false;
 	  }*/
+	@Override
+	public int compareTo(BankAccount o) {
+		// TODO Auto-generated method stub
+		int dif=(int)(this.balance-o.getBalance());
+		if (dif==0) {
+			return name.compareTo(o.getName());
+		}
+		return dif;
+	}
 
 }

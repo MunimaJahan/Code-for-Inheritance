@@ -18,5 +18,9 @@ public class Main {
     StudentIDComparator comp = new StudentIDComparator();
     Collections.sort(students, comp);
     System.out.println("id ordered "+ students);
+    
+    StudentNameComparator comp1=new StudentNameComparator();
+    Collections.sort(students,comp1);
+    System.out.println("Name ordered "+ students);
   }
 }

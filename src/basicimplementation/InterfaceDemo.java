@@ -1,21 +1,24 @@
 package basicimplementation;
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class InterfaceDemo {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		ArrayList<BankAccount> accounts=new ArrayList<BankAccount>();
-		accounts.add(new BankAccount("n1", 100));
-		accounts.add(new BankAccount("n2", 200));
-		accounts.add(new BankAccount("n3", 100));
+		accounts.add(new BankAccount("d", 100));
+		accounts.add(new BankAccount("a", 200));
+		accounts.add(new BankAccount("c", 100));
 		BankAccount btest=new BankAccount("n1", 100);
 		//btest=accounts.get(0);
+		AccBalanceComparator cmp=new AccBalanceComparator();
+		Collections.sort(accounts);
+		//Collections.sort(accounts, cmp);
 		System.out.println(average(accounts));
 		for (BankAccount b: accounts) {
-			if (b.equals(btest)) {
-				System.out.println("Accounts are equal");
-			}
+			System.out.println(b.getName());
+			System.out.println(b.getBalance());
 		}
 
 	}
