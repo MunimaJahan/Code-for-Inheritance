@@ -6,6 +6,7 @@ public class ShapeDemo {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		//Testing github
 		ArrayList<Shape> shapelist=new ArrayList<>();
 		//ArrayList<Square> sqlist=new ArrayList<Square>();
 		Shape s;
